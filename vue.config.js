@@ -15,5 +15,6 @@ module.exports = {
     ]
   },
 
-  assetsDir: 'assets'
+  assetsDir: 'assets',
+  outputDir: 'docs'
 }
