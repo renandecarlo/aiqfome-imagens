@@ -32,6 +32,8 @@ const maskFolder = path.resolve(__dirname, '../src/assets/resources/masks/')
             // const maskColor = Jimp.rgbaToInt(0, 255, 1, 255)
             const maskColor = Jimp.rgbaToInt(96, 252, 28, 255)
             // const maskColor = Jimp.rgbaToInt(255, 255, 255, 0);
+
+            console.log(file, Jimp.intToRGBA(image.getPixelColor(915,115)))
     
     
             /* Scan image for mask colors and save mask coordinates */
