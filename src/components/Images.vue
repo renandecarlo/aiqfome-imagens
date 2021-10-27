@@ -51,7 +51,7 @@
 					:loading="loading"
 					:disabled="loading"
 				>
-					<template v-slot:loader>
+					<template v-slot:loading>
 						<span>Aguarde...</span>
 					</template>
 					3. Gerar Imagens
@@ -220,22 +220,25 @@
 					}
 
 	
+
 					/* Generate images */
-					this.loading = true	
 					const data = []
+					this.loading = true	
 	
 					for(const i in images)
 						data.push(await this.generateImage(images[i], this.$root.state.preview.canvas.toDataURL()))
 	
+					this.loading = false
+					
 					/* Just open in a tab if single image */
 					if(images.length == 1)
 						return this.openImage(data[0].url, images[0].file)
 	
+
 					/* Zip and download files */
 					const zip = await this.zipFiles(data, images)
 					const zipName = this.$root.state.upload.name.split('.')[0]
 	
-					this.loading = false
 					return await this.downloadFile(zip, zipName);
 					
 				} catch(error) {
