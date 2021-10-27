@@ -51,8 +51,11 @@
 					:loading="loading"
 					:disabled="loading"
 				>
-					<template v-slot:loading>
-						<span>Aguarde...</span>
+					<template v-slot:loader>
+						Aguarde...&nbsp;
+						<span class="custom-loader">
+							<v-icon light>mdi-cached</v-icon>
+						</span>						
 					</template>
 					3. Gerar Imagens
 				</v-btn>
@@ -217,9 +220,7 @@
 						this.error.msg = 'Selecione pelo menos uma imagem'
 	
 						return false
-					}
-
-	
+					}						
 
 					/* Generate images */
 					const data = []
@@ -229,7 +230,7 @@
 						data.push(await this.generateImage(images[i], this.$root.state.preview.canvas.toDataURL()))
 	
 					this.loading = false
-					
+
 					/* Just open in a tab if single image */
 					if(images.length == 1)
 						return this.openImage(data[0].url, images[0].file)
@@ -264,7 +265,6 @@
 
 			async downloadFile(file, name) {
 				try {
-					console.log(file)
 					// FileSaver.saveAs(file, `${name}.zip`)
 	
 					const fileStream = streamSaver.createWriteStream(`${name}.zip`, {
@@ -381,5 +381,43 @@
 
 	.generate {
 		/* font-size: 16px; */
+	}
+
+	.custom-loader {
+		animation: loader 1s infinite;
+		display: flex;
+	}
+
+	@-moz-keyframes loader {
+		from {
+		transform: rotate(0);
+		}
+		to {
+		transform: rotate(360deg);
+		}
+	}
+	@-webkit-keyframes loader {
+		from {
+		transform: rotate(0);
+		}
+		to {
+		transform: rotate(360deg);
+		}
+	}
+	@-o-keyframes loader {
+		from {
+		transform: rotate(0);
+		}
+		to {
+		transform: rotate(360deg);
+		}
+	}
+	@keyframes loader {
+		from {
+		transform: rotate(0);
+		}
+		to {
+		transform: rotate(360deg);
+		}
 	}
 </style>
