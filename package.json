@@ -4,13 +4,14 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "node scripts/buildImages.js && vue-cli-service build",
-    "build:img": "node scripts/buildImages",
+    "build": "node scripts/build-images.js && vue-cli-service build",
+    "build:img": "node scripts/build-images.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.6.5",
     "file-saver": "^2.0.5",
+    "fs-extra": "^7.0.1",
     "jimp": "^0.16.1",
     "jszip": "^3.7.1",
     "streamsaver": "^2.0.5",
