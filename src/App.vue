@@ -23,7 +23,6 @@
 				dark
 				target="_blank"
 				color="primary"
-				flat
 				elevation="1"
 
 			>
