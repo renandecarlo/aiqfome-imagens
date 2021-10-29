@@ -173,6 +173,7 @@
 			// }
 
 			/* Add default selected prop image data */
+			maskData.reverse() /* Reverse images order */
 			for(const i in maskData)
 				maskData[i].selected = maskData[i].selected || false
 
