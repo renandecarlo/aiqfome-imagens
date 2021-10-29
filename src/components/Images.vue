@@ -117,7 +117,7 @@
 							<v-fade-transition>
 								<!-- :value="images[i].selected" -->
 								<v-overlay									
-									v-if="hover || images[i].selected"
+									v-if="(hover && !$isMobile()) || images[i].selected"
 									value="1"
 									absolute
 									color="#222"
