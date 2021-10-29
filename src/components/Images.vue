@@ -142,6 +142,29 @@
 				</v-hover>
 			</v-col>
 		</v-row>
+		<v-row
+			no-gutters
+		>
+			<v-col cols="12">
+				<v-btn 
+					elevation="1"
+					class="mb-2 mt-6 text-md-subtitle-1 font-weight-medium generate darken-1"
+					color="success"
+					block
+					v-on:click="generateImages"
+					:loading="loading"
+					:disabled="loading"
+				>
+					<template v-slot:loader>
+						Aguarde...&nbsp;
+						<span class="custom-loader">
+							<v-icon light>mdi-cached</v-icon>
+						</span>						
+					</template>
+					3. Gerar Imagens
+				</v-btn>
+			</v-col>
+		</v-row>
 	</v-container>
 </template>
 
