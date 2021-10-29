@@ -20,8 +20,12 @@
 
 			<v-btn
 				href="https://github.com/renandecarlo/aiqfome-imagens"
+				dark
 				target="_blank"
-				text
+				color="primary"
+				flat
+				elevation="1"
+
 			>
 				<!-- <span class="ma-2">Repo</span> -->
 				<v-icon>mdi-github</v-icon>
