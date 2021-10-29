@@ -23,7 +23,7 @@
 				dark
 				target="_blank"
 				color="primary"
-				flat
+				text
 				elevation="1"
 
 			>
