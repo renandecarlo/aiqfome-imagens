@@ -165,6 +165,18 @@
 				</v-btn>
 			</v-col>
 		</v-row>
+		<back-to-top text="Back to top" visibleoffset="150">
+			<v-btn
+				light
+				fixed
+				bottom
+				right
+				elevation="2"
+				color="primary lighten-1"
+			>
+				<v-icon>mdi-keyboard-caps</v-icon>
+			</v-btn>
+		</back-to-top>
 	</v-container>
 </template>
 
