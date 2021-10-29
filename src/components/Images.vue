@@ -121,6 +121,7 @@
 									value="1"
 									absolute
 									color="#222"
+									z-index="1"
 								>
 									<v-btn
 										class="toggle"
