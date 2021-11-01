@@ -296,5 +296,27 @@ export const data = [
     "maskY": 556,
     "circle": true,
     "file": "vemproapp_generica_restaurante_story.png"
+  },
+  {
+    "mask": 1,
+    "width": 1200,
+    "height": 1200,
+    "maskW": 218,
+    "maskH": 218,
+    "maskX": 962,
+    "maskY": 318,
+    "circle": true,
+    "file": "vestamosnoaiq_desconto_black-feed.png"
+  },
+  {
+    "mask": 1,
+    "width": 1080,
+    "height": 1920,
+    "maskW": 313,
+    "maskH": 313,
+    "maskX": 149,
+    "maskY": 115,
+    "circle": true,
+    "file": "vestamosnoaiq_desconto_black-story.png"
   }
 ]
