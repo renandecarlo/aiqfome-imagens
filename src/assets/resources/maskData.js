@@ -257,6 +257,28 @@ export const data = [
     "mask": 1,
     "width": 1000,
     "height": 1000,
+    "maskW": 150,
+    "maskH": 150,
+    "maskX": 530,
+    "maskY": 39,
+    "circle": false,
+    "file": "março-on-fire-restaurantes-feed.png"
+  },
+  {
+    "mask": 1,
+    "width": 1080,
+    "height": 1920,
+    "maskW": 195,
+    "maskH": 195,
+    "maskX": 582,
+    "maskY": 236,
+    "circle": false,
+    "file": "março-on-fire-restaurantes-story.png"
+  },
+  {
+    "mask": 1,
+    "width": 1000,
+    "height": 1000,
     "maskW": 263,
     "maskH": 249,
     "maskX": 72,
